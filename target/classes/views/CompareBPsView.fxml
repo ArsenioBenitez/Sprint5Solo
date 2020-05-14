@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.CompareViewController">
+   <center>
+      <SplitPane dividerPositions="0.4797979797979798" prefHeight="300.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="250.0">
+               <children>
+                  <TreeView fx:id="treeView1" prefHeight="300.0" prefWidth="250.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="250.0">
+               <children>
+                  <TreeView fx:id="treeView2" prefHeight="300.0" prefWidth="250.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+   <top>
+      <HBox prefHeight="50.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="BusinessPlan1">
+               <HBox.margin>
+                  <Insets left="50.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="BusinessPlan2">
+               <HBox.margin>
+                  <Insets left="175.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
